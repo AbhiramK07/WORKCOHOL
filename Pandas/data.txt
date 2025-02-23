@@ -1,0 +1,43 @@
+grouped = df.groupby('city')['age'].mean()
+grouped
+
+df['salary'] = [50000, None, 60000]
+df
+
+df.fillna(0, inplace = True)
+df.fillna()
+
+df.dropna(inplace = True)
+df
+
+df1 = pd.df({'Id': [1,2], 'Name': ["Alice", "Bob"]})
+df2 = pd.df({'Id': [1,2], 'Salary': [50000, 60000]})
+
+df1
+
+df2
+
+merg = pd.merge(df1, df2, on = 'Id')
+merg
+
+
+df1.set_index('Id', inplace = true)
+df1
+
+df2.set_index('Id', inplace = true)
+df2
+
+joined = df1.join(df2)
+joined
+
+
+df['date'] = pd.to_datetime(['2025-01-07', '2025-01-05', '2025-01-01'])
+df
+
+df['Year'] = df['date'].dt.year
+df
+
+
+### export as csv
+
+df.to_csv("out.csv", index = False)
